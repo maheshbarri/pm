@@ -1,4 +1,4 @@
-create or replace procedure sp_git(pi_deptno  in number)
+create or replace procedure sp_git(pi_deptno  in number,pi_n out number)
 
 is
 cursor c1 is select ename,sal from emp_a  where deptno=pi_deptno;
